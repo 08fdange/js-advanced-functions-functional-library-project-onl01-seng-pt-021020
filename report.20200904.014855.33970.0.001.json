@@ -1,0 +1,649 @@
+
+{
+  "header": {
+    "reportVersion": 2,
+    "event": "Allocation failed - JavaScript heap out of memory",
+    "trigger": "FatalError",
+    "filename": "report.20200904.014855.33970.0.001.json",
+    "dumpEventTime": "2020-09-04T01:48:55Z",
+    "dumpEventTimeStamp": "1599198535865",
+    "processId": 33970,
+    "threadId": null,
+    "cwd": "/Users/frankdangelo/js-advanced-functions-functional-library-project-onl01-seng-pt-021020",
+    "commandLine": [
+      "/Users/frankdangelo/.nvm/versions/node/v13.10.1/bin/node",
+      "/Users/frankdangelo/js-advanced-functions-functional-library-project-onl01-seng-pt-021020/node_modules/mocha/bin/_mocha",
+      "--timeout",
+      "5000",
+      "-R",
+      "mocha-multi",
+      "--reporter-options",
+      "spec=-,json=.results.json"
+    ],
+    "nodejsVersion": "v13.10.1",
+    "wordSize": 64,
+    "arch": "x64",
+    "platform": "darwin",
+    "componentVersions": {
+      "node": "13.10.1",
+      "v8": "7.9.317.25-node.29",
+      "uv": "1.34.2",
+      "zlib": "1.2.11",
+      "brotli": "1.0.7",
+      "ares": "1.15.0",
+      "modules": "79",
+      "nghttp2": "1.40.0",
+      "napi": "5",
+      "llhttp": "2.0.4",
+      "openssl": "1.1.1d",
+      "cldr": "36.0",
+      "icu": "65.1",
+      "tz": "2019c",
+      "unicode": "12.1"
+    },
+    "release": {
+      "name": "node",
+      "headersUrl": "https://nodejs.org/download/release/v13.10.1/node-v13.10.1-headers.tar.gz",
+      "sourceUrl": "https://nodejs.org/download/release/v13.10.1/node-v13.10.1.tar.gz"
+    },
+    "osName": "Darwin",
+    "osRelease": "19.6.0",
+    "osVersion": "Darwin Kernel Version 19.6.0: Thu Jun 18 20:49:00 PDT 2020; root:xnu-6153.141.1~1/RELEASE_X86_64",
+    "osMachine": "x86_64",
+    "cpus": [
+      {
+        "model": "Intel(R) Core(TM) i5-6267U CPU @ 2.90GHz",
+        "speed": 2900,
+        "user": 15327920,
+        "nice": 0,
+        "sys": 13917560,
+        "idle": 90738650,
+        "irq": 0
+      },
+      {
+        "model": "Intel(R) Core(TM) i5-6267U CPU @ 2.90GHz",
+        "speed": 2900,
+        "user": 4779940,
+        "nice": 0,
+        "sys": 2856070,
+        "idle": 112337850,
+        "irq": 0
+      },
+      {
+        "model": "Intel(R) Core(TM) i5-6267U CPU @ 2.90GHz",
+        "speed": 2900,
+        "user": 14786510,
+        "nice": 0,
+        "sys": 9548150,
+        "idle": 95639290,
+        "irq": 0
+      },
+      {
+        "model": "Intel(R) Core(TM) i5-6267U CPU @ 2.90GHz",
+        "speed": 2900,
+        "user": 4201720,
+        "nice": 0,
+        "sys": 2318120,
+        "idle": 113454000,
+        "irq": 0
+      }
+    ],
+    "networkInterfaces": [
+      {
+        "name": "lo0",
+        "internal": true,
+        "mac": "00:00:00:00:00:00",
+        "address": "127.0.0.1",
+        "netmask": "255.0.0.0",
+        "family": "IPv4"
+      },
+      {
+        "name": "lo0",
+        "internal": true,
+        "mac": "00:00:00:00:00:00",
+        "address": "::1",
+        "netmask": "ffff:ffff:ffff:ffff:ffff:ffff:ffff:ffff",
+        "family": "IPv6",
+        "scopeid": 0
+      },
+      {
+        "name": "lo0",
+        "internal": true,
+        "mac": "00:00:00:00:00:00",
+        "address": "fe80::1",
+        "netmask": "ffff:ffff:ffff:ffff::",
+        "family": "IPv6",
+        "scopeid": 1
+      },
+      {
+        "name": "en0",
+        "internal": false,
+        "mac": "78:4f:43:56:b6:19",
+        "address": "fe80::c28:7174:44be:b4a2",
+        "netmask": "ffff:ffff:ffff:ffff::",
+        "family": "IPv6",
+        "scopeid": 6
+      },
+      {
+        "name": "en0",
+        "internal": false,
+        "mac": "78:4f:43:56:b6:19",
+        "address": "192.168.1.11",
+        "netmask": "255.255.255.0",
+        "family": "IPv4"
+      },
+      {
+        "name": "awdl0",
+        "internal": false,
+        "mac": "b6:7f:93:3e:95:f1",
+        "address": "fe80::b47f:93ff:fe3e:95f1",
+        "netmask": "ffff:ffff:ffff:ffff::",
+        "family": "IPv6",
+        "scopeid": 8
+      },
+      {
+        "name": "llw0",
+        "internal": false,
+        "mac": "b6:7f:93:3e:95:f1",
+        "address": "fe80::b47f:93ff:fe3e:95f1",
+        "netmask": "ffff:ffff:ffff:ffff::",
+        "family": "IPv6",
+        "scopeid": 9
+      },
+      {
+        "name": "utun0",
+        "internal": false,
+        "mac": "00:00:00:00:00:00",
+        "address": "fe80::af6c:a5ca:958d:829e",
+        "netmask": "ffff:ffff:ffff:ffff::",
+        "family": "IPv6",
+        "scopeid": 14
+      },
+      {
+        "name": "utun1",
+        "internal": false,
+        "mac": "00:00:00:00:00:00",
+        "address": "fe80::ab4d:49af:7989:a062",
+        "netmask": "ffff:ffff:ffff:ffff::",
+        "family": "IPv6",
+        "scopeid": 15
+      },
+      {
+        "name": "utun2",
+        "internal": false,
+        "mac": "00:00:00:00:00:00",
+        "address": "fe80::d31a:b0e2:3aea:9078",
+        "netmask": "ffff:ffff:ffff:ffff::",
+        "family": "IPv6",
+        "scopeid": 16
+      },
+      {
+        "name": "utun3",
+        "internal": false,
+        "mac": "00:00:00:00:00:00",
+        "address": "fe80::153f:ddbc:5d03:73f9",
+        "netmask": "ffff:ffff:ffff:ffff::",
+        "family": "IPv6",
+        "scopeid": 17
+      },
+      {
+        "name": "utun4",
+        "internal": false,
+        "mac": "00:00:00:00:00:00",
+        "address": "fe80::b8eb:917a:aad3:2c1e",
+        "netmask": "ffff:ffff:ffff:ffff::",
+        "family": "IPv6",
+        "scopeid": 18
+      },
+      {
+        "name": "utun5",
+        "internal": false,
+        "mac": "00:00:00:00:00:00",
+        "address": "fe80::57bb:e51a:53d4:e576",
+        "netmask": "ffff:ffff:ffff:ffff::",
+        "family": "IPv6",
+        "scopeid": 19
+      },
+      {
+        "name": "en5",
+        "internal": false,
+        "mac": "ac:de:48:00:11:22",
+        "address": "fe80::aede:48ff:fe00:1122",
+        "netmask": "ffff:ffff:ffff:ffff::",
+        "family": "IPv6",
+        "scopeid": 4
+      }
+    ],
+    "host": "Franks-MacBook-Pro.local"
+  },
+  "javascriptStack": {
+    "message": "No stack.",
+    "stack": [
+      "Unavailable."
+    ]
+  },
+  "nativeStack": [
+    {
+      "pc": "0x00000001001a73bc",
+      "symbol": "report::TriggerNodeReport(v8::Isolate*, node::Environment*, char const*, char const*, std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&, v8::Local<v8::String>) [/Users/frankdangelo/.nvm/versions/node/v13.10.1/bin/node]"
+    },
+    {
+      "pc": "0x0000000100096ff7",
+      "symbol": "node::OnFatalError(char const*, char const*) [/Users/frankdangelo/.nvm/versions/node/v13.10.1/bin/node]"
+    },
+    {
+      "pc": "0x00000001001dafd7",
+      "symbol": "v8::Utils::ReportOOMFailure(v8::internal::Isolate*, char const*, bool) [/Users/frankdangelo/.nvm/versions/node/v13.10.1/bin/node]"
+    },
+    {
+      "pc": "0x00000001001daf73",
+      "symbol": "v8::internal::V8::FatalProcessOutOfMemory(v8::internal::Isolate*, char const*, bool) [/Users/frankdangelo/.nvm/versions/node/v13.10.1/bin/node]"
+    },
+    {
+      "pc": "0x000000010035da45",
+      "symbol": "v8::internal::Heap::FatalProcessOutOfMemory(char const*) [/Users/frankdangelo/.nvm/versions/node/v13.10.1/bin/node]"
+    },
+    {
+      "pc": "0x00000001003312c9",
+      "symbol": "v8::internal::Factory::NewFixedArrayWithFiller(v8::internal::RootIndex, int, v8::internal::Object, v8::internal::AllocationType) [/Users/frankdangelo/.nvm/versions/node/v13.10.1/bin/node]"
+    },
+    {
+      "pc": "0x0000000100498838",
+      "symbol": "v8::internal::(anonymous namespace)::ElementsAccessorBase<v8::internal::(anonymous namespace)::FastPackedSmiElementsAccessor, v8::internal::(anonymous namespace)::ElementsKindTraits<(v8::internal::ElementsKind)0> >::GrowCapacity(v8::internal::Handle<v8::internal::JSObject>, unsigned int) [/Users/frankdangelo/.nvm/versions/node/v13.10.1/bin/node]"
+    },
+    {
+      "pc": "0x000000010064cd64",
+      "symbol": "v8::internal::Runtime_GrowArrayElements(int, unsigned long*, v8::internal::Isolate*) [/Users/frankdangelo/.nvm/versions/node/v13.10.1/bin/node]"
+    },
+    {
+      "pc": "0x00000001009aec79",
+      "symbol": "Builtins_CEntry_Return1_DontSaveFPRegs_ArgvOnStack_NoBuiltinExit [/Users/frankdangelo/.nvm/versions/node/v13.10.1/bin/node]"
+    }
+  ],
+  "javascriptHeap": {
+    "totalMemory": 2758164480,
+    "totalCommittedMemory": 2757364200,
+    "usedMemory": 2718147384,
+    "availableMemory": 17135216,
+    "memoryLimit": 2197815296,
+    "heapSpaces": {
+      "read_only_space": {
+        "memorySize": 262144,
+        "committedMemory": 33328,
+        "capacity": 33040,
+        "used": 33040,
+        "available": 0
+      },
+      "new_space": {
+        "memorySize": 33554432,
+        "committedMemory": 33541856,
+        "capacity": 16758784,
+        "used": 0,
+        "available": 16758784
+      },
+      "old_space": {
+        "memorySize": 32649216,
+        "committedMemory": 32478200,
+        "capacity": 27703184,
+        "used": 27326752,
+        "available": 376432
+      },
+      "code_space": {
+        "memorySize": 692224,
+        "committedMemory": 465856,
+        "capacity": 396768,
+        "used": 396768,
+        "available": 0
+      },
+      "map_space": {
+        "memorySize": 1576960,
+        "committedMemory": 1415456,
+        "capacity": 1048720,
+        "used": 1048720,
+        "available": 0
+      },
+      "large_object_space": {
+        "memorySize": 1786867712,
+        "committedMemory": 1786867712,
+        "capacity": 1786828440,
+        "used": 1786828440,
+        "available": 0
+      },
+      "code_large_object_space": {
+        "memorySize": 49152,
+        "committedMemory": 49152,
+        "capacity": 2784,
+        "used": 2784,
+        "available": 0
+      },
+      "new_large_object_space": {
+        "memorySize": 902512640,
+        "committedMemory": 902512640,
+        "capacity": 902510880,
+        "used": 902510880,
+        "available": 0
+      }
+    }
+  },
+  "resourceUsage": {
+    "userCpuSeconds": 3.50606,
+    "kernelCpuSeconds": 1.07379,
+    "cpuConsumptionPercent": 76.3308,
+    "maxRss": 2749240442880,
+    "pageFaults": {
+      "IORequired": 28,
+      "IONotRequired": 747730
+    },
+    "fsActivity": {
+      "reads": 0,
+      "writes": 0
+    }
+  },
+  "libuv": [
+  ],
+  "workers": [
+  ],
+  "environmentVariables": {
+    "npm_config_save_dev": "",
+    "npm_config_legacy_bundling": "",
+    "npm_config_dry_run": "",
+    "BUNDLER_ORIG_PATH": "/Users/frankdangelo/.rvm/gems/ruby-2.6.1/bin:/Users/frankdangelo/.rvm/gems/ruby-2.6.1@global/bin:/Users/frankdangelo/.rvm/rubies/ruby-2.6.1/bin:/Users/frankdangelo/.nvm/versions/node/v13.10.1/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/frankdangelo/.rvm/gems/ruby-2.6.1/bin:/Users/frankdangelo/.rvm/gems/ruby-2.6.1@global/bin:/Users/frankdangelo/.rvm/rubies/ruby-2.6.1/bin:/Users/frankdangelo/.rvm/bin:/Users/frankdangelo/.rvm/bin",
+    "npm_config_viewer": "man",
+    "npm_config_only": "",
+    "npm_config_commit_hooks": "true",
+    "npm_config_browser": "",
+    "npm_package_gitHead": "ada5d426d6eeb3a8fa6984049ddf9c0c0c5b9226",
+    "npm_config_also": "",
+    "npm_config_sign_git_commit": "",
+    "npm_config_rollback": "true",
+    "TERM_PROGRAM": "vscode",
+    "rvm_bin_path": "/Users/frankdangelo/.rvm/bin",
+    "NODE": "/Users/frankdangelo/.nvm/versions/node/v13.10.1/bin/node",
+    "npm_config_usage": "",
+    "npm_config_audit": "true",
+    "INIT_CWD": "/Users/frankdangelo/js-advanced-functions-functional-library-project-onl01-seng-pt-021020",
+    "npm_package_homepage": "https://github.com/learn-co-curriculum/js-functional-library-project#readme",
+    "NVM_CD_FLAGS": "-q",
+    "GEM_HOME": "/Users/frankdangelo/.rvm/gems/ruby-2.6.1",
+    "npm_config_globalignorefile": "/Users/frankdangelo/.nvm/versions/node/v13.10.1/etc/npmignore",
+    "npm_package_devDependencies_mocha": "5.2.0",
+    "BUNDLER_ORIG_MANPATH": "BUNDLER_ENVIRONMENT_PRESERVER_INTENTIONALLY_NIL",
+    "TERM": "xterm-256color",
+    "SHELL": "/bin/zsh",
+    "npm_config_shell": "/bin/zsh",
+    "npm_config_maxsockets": "50",
+    "npm_config_init_author_url": "",
+    "npm_config_shrinkwrap": "true",
+    "npm_config_parseable": "",
+    "npm_config_metrics_registry": "https://registry.npmjs.org/",
+    "BUNDLER_ORIG_GEM_HOME": "/Users/frankdangelo/.rvm/gems/ruby-2.6.1",
+    "IRBRC": "/Users/frankdangelo/.rvm/rubies/ruby-2.6.1/.irbrc",
+    "TMPDIR": "/var/folders/sn/tfs3sygn4q324ynk7zmqydjw0000gn/T/",
+    "npm_config_timing": "",
+    "npm_config_init_license": "ISC",
+    "npm_config_if_present": "",
+    "npm_package_devDependencies_file_system": "2.2.2",
+    "npm_package_devDependencies_babel_core": "6.26.3",
+    "TERM_PROGRAM_VERSION": "1.48.2",
+    "npm_config_sign_git_tag": "",
+    "npm_config_init_author_email": "",
+    "npm_config_cache_max": "Infinity",
+    "BUNDLER_ORIG_BUNDLER_VERSION": "BUNDLER_ENVIRONMENT_PRESERVER_INTENTIONALLY_NIL",
+    "ORIGINAL_XDG_CURRENT_DESKTOP": "undefined",
+    "npm_config_preid": "",
+    "npm_config_long": "",
+    "npm_config_local_address": "",
+    "npm_config_git_tag_version": "true",
+    "npm_config_cert": "",
+    "TERM_SESSION_ID": "5F029C87-6ACE-45FC-A4F0-ADE56EE4B362",
+    "MY_RUBY_HOME": "/Users/frankdangelo/.rvm/rubies/ruby-2.6.1",
+    "npm_config_registry": "https://registry.npmjs.org/",
+    "npm_config_noproxy": "",
+    "npm_config_fetch_retries": "2",
+    "npm_package_repository_url": "git+ssh://git@github.com/learn-co-curriculum/js-functional-library-project.git",
+    "npm_config_versions": "",
+    "npm_config_message": "%s",
+    "npm_config_key": "",
+    "npm_package_readmeFilename": "README.md",
+    "npm_package_devDependencies_mocha_multi": "1.0.1",
+    "npm_package_description": "JavaScript Variables Lab for Learn.co",
+    "NVM_DIR": "/Users/frankdangelo/.nvm",
+    "USER": "frankdangelo",
+    "npm_package_license": "SEE LICENSE IN LICENSE.md",
+    "COMMAND_MODE": "unix2003",
+    "npm_config_globalconfig": "/Users/frankdangelo/.nvm/versions/node/v13.10.1/etc/npmrc",
+    "npm_package_devDependencies_chai_spies_next": "^0.9.3",
+    "npm_config_prefer_online": "",
+    "npm_config_logs_max": "10",
+    "npm_config_always_auth": "",
+    "rvm_path": "/Users/frankdangelo/.rvm",
+    "SSH_AUTH_SOCK": "/private/tmp/com.apple.launchd.cf9P7lm5JI/Listeners",
+    "__CF_USER_TEXT_ENCODING": "0x1F5:0x0:0x0",
+    "npm_execpath": "/Users/frankdangelo/.nvm/versions/node/v13.10.1/lib/node_modules/npm/bin/npm-cli.js",
+    "npm_config_global_style": "",
+    "npm_config_cache_lock_retries": "10",
+    "npm_config_update_notifier": "true",
+    "npm_config_cafile": "",
+    "npm_package_author_name": "flatironschool",
+    "BUNDLER_ORIG_RUBYLIB": "BUNDLER_ENVIRONMENT_PRESERVER_INTENTIONALLY_NIL",
+    "npm_config_heading": "npm",
+    "npm_config_audit_level": "low",
+    "npm_config_searchlimit": "20",
+    "npm_config_read_only": "",
+    "npm_config_offline": "",
+    "npm_config_fetch_retry_mintimeout": "10000",
+    "BUNDLER_ORIG_RUBYOPT": "BUNDLER_ENVIRONMENT_PRESERVER_INTENTIONALLY_NIL",
+    "rvm_prefix": "/Users/frankdangelo",
+    "npm_config_json": "",
+    "npm_config_access": "",
+    "npm_config_argv": "{\"remain\":[],\"cooked\":[\"test\"],\"original\":[\"test\"]}",
+    "PATH": "/Users/frankdangelo/.nvm/versions/node/v13.10.1/lib/node_modules/npm/node_modules/npm-lifecycle/node-gyp-bin:/Users/frankdangelo/js-advanced-functions-functional-library-project-onl01-seng-pt-021020/node_modules/.bin:/Users/frankdangelo/.rvm/gems/ruby-2.6.1/bin:/Users/frankdangelo/.rvm/gems/ruby-2.6.1@global/bin:/Users/frankdangelo/.rvm/rubies/ruby-2.6.1/bin:/Users/frankdangelo/.nvm/versions/node/v13.10.1/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/frankdangelo/.rvm/gems/ruby-2.6.1/bin:/Users/frankdangelo/.rvm/gems/ruby-2.6.1@global/bin:/Users/frankdangelo/.rvm/rubies/ruby-2.6.1/bin:/Users/frankdangelo/.rvm/bin:/Users/frankdangelo/.rvm/bin",
+    "npm_config_allow_same_version": "",
+    "npm_config_https_proxy": "",
+    "npm_config_engine_strict": "",
+    "npm_config_description": "true",
+    "_": "/Users/frankdangelo/js-advanced-functions-functional-library-project-onl01-seng-pt-021020/node_modules/.bin/mocha",
+    "LaunchInstanceID": "DBB7D489-5341-44F0-BE15-70D6F06A9781",
+    "npm_config_userconfig": "/Users/frankdangelo/.npmrc",
+    "npm_config_init_module": "/Users/frankdangelo/.npm-init.js",
+    "npm_package_keywords_4": "let",
+    "npm_config_cidr": "",
+    "npm_package_keywords_5": "const",
+    "PWD": "/Users/frankdangelo/js-advanced-functions-functional-library-project-onl01-seng-pt-021020",
+    "npm_config_user": "501",
+    "npm_config_node_version": "13.10.1",
+    "npm_package_bugs_url": "https://github.com/learn-co-curriculum/js-functional-library-project/issues",
+    "npm_package_keywords_6": "lab",
+    "npm_lifecycle_event": "test",
+    "npm_package_devDependencies_jsdom": "9.2.1",
+    "npm_package_devDependencies_chai": "4.1.2",
+    "npm_config_save": "true",
+    "npm_config_ignore_prepublish": "",
+    "npm_config_editor": "vi",
+    "npm_config_auth_type": "legacy",
+    "npm_package_keywords_0": "learn",
+    "npm_package_repository_type": "git",
+    "npm_package_name": "js-functional-library-project",
+    "BUNDLER_ORIG_GEM_PATH": "/Users/frankdangelo/.rvm/gems/ruby-2.6.1:/Users/frankdangelo/.rvm/gems/ruby-2.6.1@global",
+    "LANG": "en_US.UTF-8",
+    "npm_config_tag": "latest",
+    "npm_config_script_shell": "",
+    "npm_package_keywords_1": "flatiron school",
+    "npm_config_progress": "true",
+    "npm_config_global": "",
+    "npm_config_before": "",
+    "npm_package_keywords_2": "javascript",
+    "npm_config_searchstaleness": "900",
+    "npm_config_optional": "true",
+    "npm_config_ham_it_up": "",
+    "npm_package_keywords_3": "variables",
+    "XPC_FLAGS": "0x0",
+    "npm_config_save_prod": "",
+    "npm_config_force": "",
+    "npm_config_bin_links": "true",
+    "npm_package_devDependencies_mocha_jsdom": "~1.1.0",
+    "npm_config_searchopts": "",
+    "npm_config_node_gyp": "/Users/frankdangelo/.nvm/versions/node/v13.10.1/lib/node_modules/npm/node_modules/node-gyp/bin/node-gyp.js",
+    "npm_config_depth": "Infinity",
+    "npm_package_main": "index.js",
+    "npm_config_sso_poll_frequency": "500",
+    "npm_config_rebuild_bundle": "true",
+    "npm_package_version": "0.1.0",
+    "XPC_SERVICE_NAME": "0",
+    "npm_config_unicode": "true",
+    "rvm_version": "1.29.9-next (master)",
+    "SHLVL": "2",
+    "HOME": "/Users/frankdangelo",
+    "npm_config_fetch_retry_maxtimeout": "60000",
+    "npm_package_scripts_test": "mocha --timeout 5000 -R mocha-multi --reporter-options spec=-,json=.results.json",
+    "VSCODE_GIT_ASKPASS_MAIN": "/Applications/Visual Studio Code.app/Contents/Resources/app/extensions/git/dist/askpass-main.js",
+    "APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL": "true",
+    "npm_config_tag_version_prefix": "v",
+    "npm_config_strict_ssl": "true",
+    "npm_config_sso_type": "oauth",
+    "npm_config_scripts_prepend_node_path": "warn-only",
+    "npm_config_save_prefix": "^",
+    "npm_config_loglevel": "notice",
+    "npm_config_ca": "",
+    "npm_config_save_exact": "",
+    "npm_config_group": "20",
+    "npm_config_fetch_retry_factor": "10",
+    "npm_config_dev": "",
+    "npm_config_version": "",
+    "npm_config_prefer_offline": "",
+    "npm_config_cache_lock_stale": "60000",
+    "npm_config_otp": "",
+    "npm_config_cache_min": "10",
+    "npm_package_dependencies_sinon": "^7.3.2",
+    "npm_package_devDependencies_babel_preset_env": "1.7.0",
+    "npm_config_searchexclude": "",
+    "npm_config_cache": "/Users/frankdangelo/.npm",
+    "BUNDLER_ORIG_BUNDLE_GEMFILE": "BUNDLER_ENVIRONMENT_PRESERVER_INTENTIONALLY_NIL",
+    "LOGNAME": "frankdangelo",
+    "npm_lifecycle_script": "mocha --timeout 5000 -R mocha-multi --reporter-options spec=-,json=.results.json",
+    "npm_config_color": "true",
+    "npm_config_proxy": "",
+    "npm_config_package_lock": "true",
+    "VSCODE_GIT_IPC_HANDLE": "/var/folders/sn/tfs3sygn4q324ynk7zmqydjw0000gn/T/vscode-git-b22a0f3d0d.sock",
+    "GEM_PATH": "/Users/frankdangelo/.rvm/gems/ruby-2.6.1:/Users/frankdangelo/.rvm/gems/ruby-2.6.1@global",
+    "npm_config_package_lock_only": "",
+    "npm_config_fund": "true",
+    "npm_config_save_optional": "",
+    "NVM_BIN": "/Users/frankdangelo/.nvm/versions/node/v13.10.1/bin",
+    "npm_config_ignore_scripts": "",
+    "npm_config_user_agent": "npm/6.13.7 node/v13.10.1 darwin x64",
+    "npm_config_cache_lock_wait": "10000",
+    "VSCODE_GIT_ASKPASS_NODE": "/Applications/Visual Studio Code.app/Contents/Frameworks/Code Helper (Renderer).app/Contents/MacOS/Code Helper (Renderer)",
+    "GIT_ASKPASS": "/Applications/Visual Studio Code.app/Contents/Resources/app/extensions/git/dist/askpass.sh",
+    "npm_config_production": "",
+    "npm_config_send_metrics": "",
+    "npm_config_save_bundle": "",
+    "BUNDLER_ORIG_BUNDLE_BIN_PATH": "BUNDLER_ENVIRONMENT_PRESERVER_INTENTIONALLY_NIL",
+    "npm_config_umask": "0022",
+    "npm_config_node_options": "",
+    "npm_config_init_version": "1.0.0",
+    "npm_config_init_author_name": "",
+    "npm_config_git": "git",
+    "npm_config_scope": "",
+    "BUNDLER_ORIG_RB_USER_INSTALL": "BUNDLER_ENVIRONMENT_PRESERVER_INTENTIONALLY_NIL",
+    "RUBY_VERSION": "ruby-2.6.1",
+    "SECURITYSESSIONID": "186aa",
+    "npm_config_unsafe_perm": "true",
+    "npm_config_tmp": "/var/folders/sn/tfs3sygn4q324ynk7zmqydjw0000gn/T",
+    "npm_config_onload_script": "",
+    "npm_node_execpath": "/Users/frankdangelo/.nvm/versions/node/v13.10.1/bin/node",
+    "npm_config_prefix": "/Users/frankdangelo/.nvm/versions/node/v13.10.1",
+    "npm_config_link": "",
+    "npm_config_format_package_lock": "true",
+    "COLORTERM": "truecolor",
+    "LOADED_MOCHA_OPTS": "true"
+  },
+  "userLimits": {
+    "core_file_size_blocks": {
+      "soft": 0,
+      "hard": "unlimited"
+    },
+    "data_seg_size_kbytes": {
+      "soft": "unlimited",
+      "hard": "unlimited"
+    },
+    "file_size_blocks": {
+      "soft": "unlimited",
+      "hard": "unlimited"
+    },
+    "max_locked_memory_bytes": {
+      "soft": "unlimited",
+      "hard": "unlimited"
+    },
+    "max_memory_size_kbytes": {
+      "soft": "unlimited",
+      "hard": "unlimited"
+    },
+    "open_files": {
+      "soft": 10240,
+      "hard": "unlimited"
+    },
+    "stack_size_bytes": {
+      "soft": 8388608,
+      "hard": 67104768
+    },
+    "cpu_time_seconds": {
+      "soft": "unlimited",
+      "hard": "unlimited"
+    },
+    "max_user_processes": {
+      "soft": 1392,
+      "hard": 2088
+    },
+    "virtual_memory_kbytes": {
+      "soft": "unlimited",
+      "hard": "unlimited"
+    }
+  },
+  "sharedObjects": [
+    "/Users/frankdangelo/.nvm/versions/node/v13.10.1/bin/node",
+    "/System/Library/Frameworks/CoreFoundation.framework/Versions/A/CoreFoundation",
+    "/usr/lib/libSystem.B.dylib",
+    "/usr/lib/libc++.1.dylib",
+    "/usr/lib/libobjc.A.dylib",
+    "/usr/lib/libfakelink.dylib",
+    "/usr/lib/libDiagnosticMessagesClient.dylib",
+    "/usr/lib/libicucore.A.dylib",
+    "/usr/lib/libz.1.dylib",
+    "/usr/lib/libc++abi.dylib",
+    "/usr/lib/system/libcache.dylib",
+    "/usr/lib/system/libcommonCrypto.dylib",
+    "/usr/lib/system/libcompiler_rt.dylib",
+    "/usr/lib/system/libcopyfile.dylib",
+    "/usr/lib/system/libcorecrypto.dylib",
+    "/usr/lib/system/libdispatch.dylib",
+    "/usr/lib/system/libdyld.dylib",
+    "/usr/lib/system/libkeymgr.dylib",
+    "/usr/lib/system/liblaunch.dylib",
+    "/usr/lib/system/libmacho.dylib",
+    "/usr/lib/system/libquarantine.dylib",
+    "/usr/lib/system/libremovefile.dylib",
+    "/usr/lib/system/libsystem_asl.dylib",
+    "/usr/lib/system/libsystem_blocks.dylib",
+    "/usr/lib/system/libsystem_c.dylib",
+    "/usr/lib/system/libsystem_configuration.dylib",
+    "/usr/lib/system/libsystem_coreservices.dylib",
+    "/usr/lib/system/libsystem_darwin.dylib",
+    "/usr/lib/system/libsystem_dnssd.dylib",
+    "/usr/lib/system/libsystem_featureflags.dylib",
+    "/usr/lib/system/libsystem_info.dylib",
+    "/usr/lib/system/libsystem_m.dylib",
+    "/usr/lib/system/libsystem_malloc.dylib",
+    "/usr/lib/system/libsystem_networkextension.dylib",
+    "/usr/lib/system/libsystem_notify.dylib",
+    "/usr/lib/system/libsystem_sandbox.dylib",
+    "/usr/lib/system/libsystem_secinit.dylib",
+    "/usr/lib/system/libsystem_kernel.dylib",
+    "/usr/lib/system/libsystem_platform.dylib",
+    "/usr/lib/system/libsystem_pthread.dylib",
+    "/usr/lib/system/libsystem_symptoms.dylib",
+    "/usr/lib/system/libsystem_trace.dylib",
+    "/usr/lib/system/libunwind.dylib",
+    "/usr/lib/system/libxpc.dylib"
+  ]
+}
